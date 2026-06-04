@@ -1,4 +1,5 @@
-# Take input from user
+#program to check a number is armstrong or not
+#Take input from user
 num = int(input("Enter a number: "))
 
 # Store original number in temp variable
