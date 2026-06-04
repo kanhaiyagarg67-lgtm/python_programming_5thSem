@@ -1,4 +1,5 @@
 #program to check a number is armstrong or not
+# armstrong number is the number that if it has 3 digits then the power 3 of all digits and sum of these should be equal to that number
 #Take input from user
 num = int(input("Enter a number: "))
 
@@ -6,7 +7,7 @@ num = int(input("Enter a number: "))
 temp = num
 
 # Count total digits in the number
-digits = len(str(num))
+digits = len(str(num)) # str is used because system is not able to find length of int type
 
 # Variable to store sum of powers of digits
 sum = 0
