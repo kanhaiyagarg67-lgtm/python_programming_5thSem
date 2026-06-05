@@ -1,36 +1,26 @@
 #program foe student result management system
-# Take marks of 5 subjects from the user
-sub1 = int(input("Enter marks of subject 1: "))
-sub2 = int(input("Enter marks of subject 2: "))
-sub3 = int(input("Enter marks of subject 3: "))
-sub4 = int(input("Enter marks of subject 4: "))
-sub5 = int(input("Enter marks of subject 5: "))
-
-# Calculate total marks
-total = sub1 + sub2 + sub3 + sub4 + sub5
-
-# Calculate percentage
-# Total marks = 500 because 5 subjects and each subject is out of 100
-percentage = total / 5
+# Variable to store total marks
+total = 0
 
 # Variable to count failed subjects
 failed_subjects = 0
 
-# If marks are less than 40, that subject is failed
-if sub1 < 40:
-    failed_subjects = failed_subjects + 1
+# Loop will run 5 times for 5 subjects
+for i in range(1, 6):
+    # Take marks of each subject
+    marks = int(input("Enter marks of subject " + str(i) + ": "))
 
-if sub2 < 40:
-    failed_subjects = failed_subjects + 1
+    # Add marks to total
+    total = total + marks
 
-if sub3 < 40:
-    failed_subjects = failed_subjects + 1
+    # Check if marks are less than 40
+    # If yes, increase failed subject count
+    if marks < 40:
+        failed_subjects = failed_subjects + 1
 
-if sub4 < 40:
-    failed_subjects = failed_subjects + 1
-
-if sub5 < 40:
-    failed_subjects = failed_subjects + 1
+# Calculate percentage
+# Total subjects = 5, each subject is out of 100
+percentage = total / 5
 
 # Decide grade according to percentage
 if percentage >= 90:
