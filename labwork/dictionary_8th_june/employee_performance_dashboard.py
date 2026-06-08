@@ -22,31 +22,8 @@ Tasks
 o Excellent (≥ 90)  
 o Good (75–89)  
 o Average (60–74)  
-o Poor (< 60)  
-Sample Output 
-Employees Scoring Above 80: 
-EMP101 
-EMP104 
-EMP105 
-EMP107 
- 
-Top Performer: EMP105 (97) 
- 
-Employees Needing Improvement: 3 
- 
-Average Score: 71.3 
- 
-Excellent: 
-['EMP101', 'EMP105'] 
- 
-Good: 
-['EMP102', 'EMP104', 'EMP107'] 
- 
-Average: 
-['EMP108', 'EMP110'] 
- 
-Poor: 
-['EMP103', 'EMP106', 'EMP109']'''
+o Poor (< 60)  '''
+
 
 # Employee Performance Dashboard
 performance = {
@@ -125,6 +102,32 @@ print(average_list)
 print()
 print("Poor:")
 print(poor)
+
+
+'''Sample Output 
+Employees Scoring Above 80: 
+EMP101 
+EMP104 
+EMP105 
+EMP107 
+ 
+Top Performer: EMP105 (97) 
+ 
+Employees Needing Improvement: 3 
+ 
+Average Score: 71.3 
+ 
+Excellent: 
+['EMP101', 'EMP105'] 
+ 
+Good: 
+['EMP102', 'EMP104', 'EMP107'] 
+ 
+Average: 
+['EMP108', 'EMP110'] 
+ 
+Poor: 
+['EMP103', 'EMP106', 'EMP109']'''
 
 
 
