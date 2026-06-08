@@ -43,7 +43,7 @@ for city, temp in temperature.items():
 
 
 # 2. Find the hottest city
-# First city ko hottest maan liya
+#  take First city as a hottest city
 dict_items = list(temperature.items())
 
 hottest_city = dict_items[0][0]
@@ -59,7 +59,7 @@ print("Hottest City:", hottest_city, highest_temp ,"°C")
 
 
 # 3. Find the coolest city
-# First city ko coolest maan liya
+#  take First city as a coolest city
 coolest_city = dict_items[0][0]
 lowest_temp = dict_items[0][1]
 
